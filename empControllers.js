@@ -15,7 +15,7 @@ async function getdata_withQuery() {
     try {
       let pool = await sql.connect(config);
       let res = await pool.request().query("SELECT *  FROM emp");
-      return res.recordsets;
+      return res.recordsets[0];
     } catch (error) {
       console.log("Error :" + error);
     }
