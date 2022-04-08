@@ -10,6 +10,6 @@ export const decrement =() =>{
     }
      
 }
-export const getEmployee =() =>{
-    return{type:"Fetch"}
+export const getEmployee =(usr) =>{
+    return{type:"Fetch",payload:usr}
 }
