@@ -1,3 +1,4 @@
+import axios from "axios";
 export const increment =() =>{
     return{
         type:"INCREMENT"
@@ -10,6 +11,7 @@ export const decrement =() =>{
     }
      
 }
-export const getEmployee =(usr) =>{
-    return{type:"Fetch",payload:usr}
+export const getEmployee =() =>{
+    const {data} = axios.get("http://localhost:3000/getdata_withQuery");
+    return{type:"Fetch",payload:data}
 }

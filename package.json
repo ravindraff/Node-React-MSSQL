@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon ./bin/www"
   },
-  "dependencies": {
+  "dependencies": { 
     "axios": "^0.26.1",
     "bootstrap": "^5.1.3",
     "chai": "^4.3.6",

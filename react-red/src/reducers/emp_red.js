@@ -1,4 +1,3 @@
-const empState =[]
 const countReducer = (state = 0,action)=>{
     switch (action.type) {
         case "INCREMENT":
@@ -6,11 +5,7 @@ const countReducer = (state = 0,action)=>{
         case "DECREMENT":
             return state-1
         case "Fetch":
-            return {
-                ...empState,
-                state: action.payload,
-
-            };
+            return 25
         default:
             return state;
     }
